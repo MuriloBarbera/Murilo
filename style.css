@@ -1,0 +1,533 @@
+/* Reset e base */
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5; /* Cor de fundo suave e clara */
+    color: #333; /* Cor de texto escura para contraste */
+}
+
+/* Header e Navegação */
+header {
+    background-color: #ffffff; /* Branco para o header */
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff; /* Azul claro para links */
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0056b3; /* Azul escuro para hover */
+}
+
+/* Seção Blog */
+.blog {
+    padding: 50px 20px;
+    background: linear-gradient(to bottom right, #e0e0e0, #ffffff); /* Gradiente suave de cinza claro para branco */
+}
+
+.blog h1 {
+    font-size: 2.5rem;
+    color: #007bff; /* Azul claro para o título principal */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog p {
+    font-size: 1.2rem;
+    color: #333; /* Cor escura para o texto */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog-post {
+    background: #ffffff; /* Fundo branco para os posts */
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px;
+    padding: 20px;
+    max-width: 800px; /* Largura máxima dos posts */
+    margin: 20px auto; /* Centraliza horizontalmente */
+}
+
+.blog-post h2 {
+    font-size: 2rem;
+    color: #007bff; /* Azul claro para os títulos dos posts */
+    margin-bottom: 10px;
+}
+
+.blog-post .date {
+    font-size: 1rem;
+    color: #888; /* Cinza claro para a data */
+    margin-bottom: 15px;
+}
+
+.blog-post p {
+    font-size: 1.2rem;
+    color: #333; /* Cor escura para o texto */
+    margin-bottom: 15px;
+}
+
+.blog-post a {
+    text-decoration: none;
+    color: #007bff; /* Azul claro para links */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.blog-post a:hover {
+    color: #0056b3; /* Azul escuro para hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333; /* Cor escura para o rodapé */
+    color: #ffffff; /* Texto branco */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Seção Hero */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 20px;
+    background-color: #ffffff; /* Branco para a seção hero */
+    text-align: center;
+    gap: 20px;
+}
+
+.profile-pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #007bff; /* Azul claro para o contorno */
+}
+
+.intro {
+    max-width: 600px;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #333; /* Cor escura para o texto */
+    margin-bottom: 15px;
+}
+
+.intro h2 {
+    font-size: 1.8rem;
+    color: #007bff; /* Azul claro para destaque */
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff; /* Azul claro para o botão */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #0056b3; /* Azul mais escuro para hover */
+}
+
+/* Seções de Conteúdo */
+.biography, .experience {
+    padding: 50px;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.biography {
+    background: linear-gradient(to bottom right, #e0e0e0, #ffffff); /* Gradiente suave de cinza claro para branco */
+}
+
+.biography::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05); /* Camada de sobreposição leve */
+    z-index: 0;
+}
+
+.biography .section-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 700px; /* Limitar a largura para melhor legibilidade */
+    margin: 0 auto; /* Centralizar horizontalmente */
+}
+
+.biography h2, .experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Cor escura para o texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05); /* Sombra de texto leve para destaque */
+}
+
+.biography h3, .experience h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #007bff; /* Azul claro para os subtítulos */
+}
+
+.biography p, .experience ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: justify;
+    background: rgba(255, 255, 255, 0.8); /* Fundo leve para contraste */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+.biography p::first-line {
+    font-weight: bold;
+    color: #007bff; /* Azul claro para a primeira linha */
+}
+
+.biography ul {
+    list-style: none;
+    padding: 0;
+}
+
+.biography ul li {
+    background-color: rgba(255, 255, 255, 0.6); /* Fundo leve para os itens da lista */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.biography ul li:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-3px); /* Efeito de elevação ao passar o mouse */
+}
+
+/* Seção de Experiência */
+.experience {
+    background: linear-gradient(to bottom right, #e0e0e0, #f5f5f5); /* Gradiente claro */
+}
+
+.experience .section-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.95); /* Fundo branco quase opaco */
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 800px; /* Largura maior para maior conforto de leitura */
+    margin: 0 auto; /* Centralizar horizontalmente */
+}
+
+.experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0056b3; /* Azul escuro */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05); /* Sombra de texto leve para destaque */
+}
+
+.experience h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #007bff; /* Azul brilhante */
+}
+
+.experience p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555; /* Cor escura para o texto */
+}
+
+.experience ul {
+    list-style: disc;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Alinha o texto das listas à esquerda */
+}
+
+.experience ul li {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo leve para os itens da lista */
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-size: 1.2rem; /* Ajuste do tamanho da fonte */
+    color: #333; /* Cor escura para o texto */
+}
+
+.experience ul li::marker {
+    color: #007bff; /* Azul para os marcadores da lista */
+}
+
+/* Seção de Contato */
+.contact {
+    padding: 60px;
+    background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2); /* Gradiente suave em tons de azul claro */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-content {
+    background: #ffffff; /* Fundo branco para contraste */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 500px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #007bff; /* Azul claro para o título */
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333; /* Cor escura para o texto */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.contact textarea {
+    resize: vertical;
+    min-height: 150px; /* Altura mínima do textarea */
+}
+
+.contact button {
+    padding: 12px 20px;
+    background-color: #007bff; /* Azul claro para o botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #0056b3; /* Azul escuro para hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333; /* Cor escura para o rodapé */
+    color: #ffffff; /* Texto branco */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Seção de Biografia com imagem ao lado do texto */
+.biography {
+    padding: 50px;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row; /* Flexbox na direção da linha */
+    align-items: flex-start; /* Alinha o início para a imagem e o texto */
+    justify-content: center;
+    gap: 20px; /* Espaçamento reduzido entre imagem e texto */
+    background: linear-gradient(to bottom right, #e0e0e0, #ffffff); /* Gradiente suave de cinza claro para branco */
+}
+
+.biography-figure {
+    flex: 1; /* Imagem ocupa o mesmo espaço que o texto */
+    max-width: 30%; /* Limita a largura máxima da imagem para 30% do contêiner */
+    text-align: center; /* Centraliza a imagem dentro do contêiner */
+}
+
+.biography-figure img {
+    width: 50%; /* Ajusta a largura da imagem para 50% do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 25px; /* Bordas mais arredondadas para a imagem */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.biography-figure figcaption {
+    text-align: center; /* Centraliza o texto da legenda */
+    font-size: 1rem; /* Tamanho da fonte da legenda */
+    color: #666; /* Cor da legenda */
+    margin-top: 10px; /* Espaçamento acima da legenda */
+}
+
+.biography-text {
+    flex: 1; /* Texto ocupa o mesmo espaço que a imagem */
+    max-width: 70%; /* Limita a largura máxima do texto para 70% do contêiner */
+}
+
+.biography h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Cor escura para o texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05); /* Sombra de texto leve para destaque */
+}
+
+.biography h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #007bff; /* Azul claro para os subtítulos */
+}
+
+.biography p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: justify;
+    background: rgba(255, 255, 255, 0.8); /* Fundo leve para contraste */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+.biography p::first-line {
+    font-weight: bold;
+    color: #007bff; /* Azul claro para a primeira linha */
+}
+
+/* Seção de Experiência com imagem ao lado do texto */
+.experience {
+    padding: 50px;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row; /* Flexbox na direção da linha */
+    align-items: flex-start; /* Alinha o início para a imagem e o texto */
+    justify-content: space-between; /* Distribui espaço entre texto e imagem */
+    position: relative; /* Necessário para o posicionamento absoluto da imagem */
+    background: linear-gradient(to bottom right, #e0e0e0, #ffffff); /* Gradiente suave de cinza claro para branco */
+}
+
+.experience-text {
+    flex: 1;
+    max-width: 60%; /* Limita a largura máxima do texto para 60% do contêiner */
+    padding-right: 20px; /* Espaçamento entre o texto e a imagem */
+    z-index: 1; /* Garante que o texto fique acima da imagem */
+}
+
+.experience-figure {
+    flex: 1;
+    max-width: 25%; /* Reduz a largura máxima da imagem para 25% do contêiner */
+    text-align: center; /* Centraliza o texto da legenda */
+    position: relative; /* Necessário para ajustar a posição da imagem */
+}
+
+.experience-figure img {
+    width: 100%; /* Ajusta a largura da imagem para 100% do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 15px; /* Bordas arredondadas para a imagem */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.experience-figure figcaption {
+    font-size: 0.9rem; /* Tamanho da fonte da legenda */
+    color: #666; /* Cor da legenda */
+    margin-top: 10px; /* Espaçamento acima da legenda */
+}
+
+.experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Cor escura para o texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05); /* Sombra de texto leve para destaque */
+}
+
+.experience h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #007bff; /* Azul claro para os subtítulos */
+}
+
+.experience p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: justify;
+    background: rgba(255, 255, 255, 0.8); /* Fundo leve para contraste */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+.experience p::first-line {
+    font-weight: bold;
+    color: #007bff; /* Azul claro para a primeira linha */
+}
